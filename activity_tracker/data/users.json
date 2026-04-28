@@ -1,0 +1,12 @@
+{
+  "user1": {
+    "password": "password",
+    "role": "User",
+    "locked": false
+  },
+  "chetan": {
+    "password": "password",
+    "role": "Administrator",
+    "locked": false
+  }
+}
