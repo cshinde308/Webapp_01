@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Thermofisher-Monza (36939)",
+    "ifs": "P4IT019699.MS005.15"
+  },
+  {
+    "name": "Thermofisher-Monza (36940)",
+    "ifs": "P4IT019699.MS005.15"
+  },
+  {
+    "name": "ZL Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZL"
+  },
+  {
+    "name": "ZW Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZW"
+  },
+  {
+    "name": "ZH Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZH"
+  },
+  {
+    "name": "ZT1 Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZT1"
+  },
+  {
+    "name": "ZT2 Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZT2"
+  },
+  {
+    "name": "ZT3 Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZT3"
+  },
+  {
+    "name": "ZT4 Time",
+    "ifs": "Z5INOVERHD.ZTIME.ZT4"
+  },
+  {
+    "name": "Misc.",
+    "ifs": "<Miscelleneous>"
+  }
+]
