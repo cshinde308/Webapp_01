@@ -1,0 +1,22 @@
+{
+  "Admin": {
+    "password": "password",
+    "role": "Administrator",
+    "locked": false
+  },
+  "Chetan": {
+    "password": "password",
+    "role": "Administrator",
+    "locked": false
+  },
+  "Hrishikesh": {
+    "password": "password",
+    "role": "User",
+    "locked": false
+  },
+  "Saniya": {
+    "password": "password",
+    "role": "User",
+    "locked": false
+  }
+}
