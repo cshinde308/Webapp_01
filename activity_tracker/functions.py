@@ -20,7 +20,7 @@ def render_preview_with_multiline_notes(df, height_px=400):
     # Convert newlines to <br>
     for col in df.columns:
         if df[col].dtype == object:
-            df[col] = df[col].fillna("").astype(str).str.replace("\n", "<br>")
+            df[col] = df[col].fillna("").astype(str).str.replace(r"\r?\n", "<br>", regex=True)
 
     html_table = df.to_html(index=False, escape=False)
 
