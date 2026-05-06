@@ -13,14 +13,19 @@ from datetime import date, timedelta
 def render_preview_with_multiline_notes(df, height_px=400):
     """
     Render dataframe as scrollable HTML table using components.html()
-    (guaranteed rendering).
+    (Streamlit Cloud safe).
     """
     df = df.copy()
 
-    # Convert newlines to <br>
+    # ✅ FIX: handle Windows + Linux newlines
     for col in df.columns:
         if df[col].dtype == object:
-            df[col] = df[col].fillna("").astype(str).str.replace(r"\r?\n", "<br>", regex=True)
+            df[col] = (
+                df[col]
+                .fillna("")
+                .astype(str)
+                .str.replace(r"\r?\n", "<br>", regex=True)
+            )
 
     html_table = df.to_html(index=False, escape=False)
 
@@ -44,10 +49,10 @@ def render_preview_with_multiline_notes(df, height_px=400):
             font-size: 13px;
         }}
         td {{
-            white-space: pre-wrap;
+            white-space: normal;   /* IMPORTANT */
             word-wrap: break-word;
         }}
-        thread th {{
+        thead th {{
             position: sticky;
             top: 0;
             background-color: #f2f2f2;
